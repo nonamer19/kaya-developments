@@ -63,10 +63,10 @@ const Hero = () => {
           </div>
           
           {/* Headline */}
-          <h1 className="font-bondoluo text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white mx-auto">
+          <h2 className="font-bondoluo text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white mx-auto">
             We're Building the future of Boutique Travel in<br/>
             Bali And You Can Be Part of it Today.
-          </h1>
+          </h2>
           
           {/* Divider Line */}
           <div className="h-[1px] w-1/2 bg-white/40 mx-auto mb-6"></div>
