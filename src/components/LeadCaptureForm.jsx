@@ -207,10 +207,10 @@ const LeadCaptureForm = () => {
       {/* Background image with opacity */}
       <div className="absolute inset-0 w-full h-full">
         <img 
-          src="/assets/images/form-background.jpg" 
+          src="/assets/images/backgrounds/pexels-valeriiamiller-2587004.jpg" 
           alt="Background" 
           className="w-full h-full object-cover" 
-          style={{ opacity: '0.6' }} 
+          style={{ opacity: '0.5' }} 
         />
         {/* Overlay to enhance form readability */}
         <div className="absolute inset-0 bg-[#F9F6F1] opacity-70"></div>

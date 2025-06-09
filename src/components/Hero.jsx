@@ -45,65 +45,62 @@ const Hero = () => {
           transition: 'transform 0.05s ease-out'
         }}
       >
-        {/* Stronger overlay to enhance text visibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80"></div>
-        {/* Enhanced vignette effect for better text readability */}
-        <div className="absolute inset-0 shadow-[inset_0_0_150px_80px_rgba(0,0,0,0.6)]"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
       
       {/* Content Container */}
       <div className="container mx-auto px-4 z-10">
-        {/* Hero Content with enhanced typography - responsive width */}
-        <div className="max-w-3xl w-full mx-auto text-center text-white mt-6 px-4 sm:px-6">
-          {/* Logo - Centered above the text */}
-          <div className="flex justify-center mb-10 sm:mb-12">
+        {/* Hero Content */}
+        <div className="max-w-3xl w-full mx-auto text-center text-white">
+          {/* Logo */}
+          <div className="flex justify-center mb-12">
             <img 
               src="/assets/images/KAYA Development Logo Preview.png" 
               alt="KAYA Developments Logo" 
-              className="h-24 sm:h-28 md:h-32 lg:h-36 w-auto" 
+              className="h-36 w-auto" 
             />
           </div>
           
-          {/* Headline with enhanced text shadow for better visibility */}
-          <h1 className="font-work text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-wide mx-auto drop-shadow-xl shadow-black">
-            <span className="block mb-2 [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">We're building the future of</span>
-            <span className="block mb-2 [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">boutique travel in Bali</span>
-            <span className="block [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">and you can be a part of it today.</span>
+          {/* Headline */}
+          <h1 className="font-bondoluo text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white mx-auto">
+            Building the future of<br/>
+            Boutique Travel in Bali
           </h1>
           
-          {/* Divider Line - responsive width */}
-          <div className="h-[1px] w-full max-w-md bg-white/40 mx-auto mb-6"></div>
+          {/* Divider Line */}
+          <div className="h-[1px] w-1/2 bg-white/40 mx-auto mb-6"></div>
           
-          {/* Subheadline with enhanced text shadow */}
-          <h2 className="font-open text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-6 mx-auto text-white tracking-normal drop-shadow-lg [text-shadow:_0_1px_8px_rgb(0_0_0_/_50%)]">
+          {/* Subheadline */}
+          <h2 className="font-futura text-lg md:text-xl font-normal leading-relaxed mb-6 max-w-2xl mx-auto">
             Own a fully managed apartment in a Luxury Residence in Bali
-            <br className="hidden sm:block"/> 
+            <br/> 
             with stunning rice field views and tropical lifestyle access.
           </h2>
           
           {/* Delivery date */}
-          <p className="font-open text-lg md:text-xl font-semibold mb-10 md:mb-14 text-white drop-shadow-lg [text-shadow:_0_1px_8px_rgb(0_0_0_/_50%)]">
+          <p className="font-futura text-xl font-semibold mb-12 text-white">
             Delivery Q1 2026
           </p>
           
           <div className="flex flex-col items-center">
-            {/* Enhanced CTA button with better visibility against new background */}
+            {/* CTA button */}
             <a 
               href="#" 
               onClick={scrollToForm}
-              className="inline-block bg-white/10 hover:bg-white/20 text-white font-bold py-4 sm:py-5 px-8 sm:px-16 rounded-full transition-all duration-300 text-base sm:text-lg mb-12 sm:mb-16 border-2 border-kaya-beige hover:border-white transform hover:-translate-y-1 tracking-wide shadow-xl backdrop-blur-sm"
+              className="inline-block bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-12 rounded-full transition-all duration-300 text-lg mb-16 border-2 border-kaya-beige hover:border-white transform hover:-translate-y-1"
             >
               Request Project Presentation
             </a>
             
-            {/* Scroll Down Animation - using Tailwind animation */}
+            {/* Scroll Down Animation */}
             <div 
               onClick={scrollToForm}
               className="cursor-pointer opacity-80 hover:opacity-100 transition-all duration-300 animate-float"
             >
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
-                className="h-8 w-8 sm:h-10 sm:w-10 text-white drop-shadow-lg" 
+                className="h-10 w-10 text-white" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
