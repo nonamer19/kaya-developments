@@ -4,19 +4,19 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const UnitSlideshow = () => {
   const slides = [
     {
-      image: '/assets/images/Birds Eye.jpg',
+      image: '/assets/images/properties/slideshow/Birds Eye.jpg',
       label: "Bird's Eye View"
     },
     {
-      image: '/assets/images/Rooftop B.jpg',
+      image: '/assets/images/properties/slideshow/Rooftop B.jpg',
       label: "Rooftop Living Space"
     },
     {
-      image: '/assets/images/Pool View.png',
+      image: '/assets/images/properties/slideshow/Pool View.png',
       label: "Relax by the Pool"
     },
     {
-      image: '/assets/images/Pathway 2.jpg',
+      image: '/assets/images/properties/slideshow/Pathway 2.jpg',
       label: "Lush Garden Pathways"
     }
   ];
