@@ -64,8 +64,8 @@ const Hero = () => {
           
           {/* Headline */}
           <h1 className="font-bondoluo text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white mx-auto">
-            Building the future of<br/>
-            Boutique Travel in Bali
+            We're Building the future of Boutique Travel in<br/>
+            Bali And You Can Be Part of it Today.
           </h1>
           
           {/* Divider Line */}
