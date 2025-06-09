@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
           
           {/* Headline */}
-          <h1 className="font-bondoluo text-3xl sm:text-3xl md:text-3xl font-bold mb-3 text-white mx-auto">
+          <h1 className="font-bondoluo text-3xl sm:text-4xl md:text-4xl font-bold mb-3 text-white mx-auto">
             We're Building the future of Boutique Travel in<br/>
             Bali And You Can Be Part of it Today.
           </h1>
