@@ -1,22 +1,29 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+// Import images to ensure they get included in the build
+import birdsEyeImage from '/assets/images/properties/slideshow/Birds Eye.jpg';
+import rooftopImage from '/assets/images/properties/slideshow/Rooftop B.jpg';
+import poolViewImage from '/assets/images/properties/slideshow/Pool View.png';
+import pathwayImage from '/assets/images/properties/slideshow/Pathway 2.jpg';
+
 const UnitSlideshow = () => {
+
   const slides = [
     {
-      image: '/assets/images/properties/slideshow/Birds Eye.jpg',
+      image: birdsEyeImage,
       label: "Bird's Eye View"
     },
     {
-      image: '/assets/images/properties/slideshow/Rooftop B.jpg',
+      image: rooftopImage,
       label: "Rooftop Living Space"
     },
     {
-      image: '/assets/images/properties/slideshow/Pool View.png',
+      image: poolViewImage,
       label: "Relax by the Pool"
     },
     {
-      image: '/assets/images/properties/slideshow/Pathway 2.jpg',
+      image: pathwayImage,
       label: "Lush Garden Pathways"
     }
   ];
