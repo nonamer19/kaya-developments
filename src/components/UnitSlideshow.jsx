@@ -119,10 +119,12 @@ const UnitSlideshow = () => {
               index === currentSlide ? 'opacity-100 z-20' : 'opacity-0 z-10'
             }`}
           >
-            <div 
-              className="w-full h-full bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
+            <div className="w-full h-full relative">
+              <img 
+                src={slide.image} 
+                alt={slide.label}
+                className="w-full h-full object-contain"
+              />
               {/* Label overlay */}
               <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 bg-kaya-primary/80 px-4 py-2 md:px-6 md:py-3 rounded-md">
                 <p className="text-kaya-light font-work text-lg md:text-xl">{slide.label}</p>
