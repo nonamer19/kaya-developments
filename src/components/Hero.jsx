@@ -40,15 +40,15 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: 'url(/assets/images/Birds Eye.jpg)',
+          backgroundImage: 'url(/assets/images/properties/clay-house.jpg)',
           transform: `translateY(${scrollPosition * 0.15}px)`,
           transition: 'transform 0.05s ease-out'
         }}
       >
-        {/* Overlay to darken the image for better text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
-        {/* Additional vignette effect for improved text readability */}
-        <div className="absolute inset-0 shadow-[inset_0_0_120px_60px_rgba(0,0,0,0.5)]"></div>
+        {/* Stronger overlay to enhance text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80"></div>
+        {/* Enhanced vignette effect for better text readability */}
+        <div className="absolute inset-0 shadow-[inset_0_0_150px_80px_rgba(0,0,0,0.6)]"></div>
       </div>
       
       {/* Content Container */}
@@ -64,34 +64,34 @@ const Hero = () => {
             />
           </div>
           
-          {/* Headline with better font fallback */}
-          <h1 className="font-work text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-wide mx-auto drop-shadow-lg">
-            <span className="block mb-2">We're building the future of</span>
-            <span className="block mb-2">boutique travel in Bali</span>
-            <span className="block">and you can be a part of it today.</span>
+          {/* Headline with enhanced text shadow for better visibility */}
+          <h1 className="font-work text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white tracking-wide mx-auto drop-shadow-xl shadow-black">
+            <span className="block mb-2 [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">We're building the future of</span>
+            <span className="block mb-2 [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">boutique travel in Bali</span>
+            <span className="block [text-shadow:_0_1px_10px_rgb(0_0_0_/_60%)]">and you can be a part of it today.</span>
           </h1>
           
           {/* Divider Line - responsive width */}
           <div className="h-[1px] w-full max-w-md bg-white/40 mx-auto mb-6"></div>
           
-          {/* Subheadline with font fallback */}
-          <h2 className="font-open text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-6 mx-auto text-kaya-light tracking-normal drop-shadow-md">
+          {/* Subheadline with enhanced text shadow */}
+          <h2 className="font-open text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-6 mx-auto text-white tracking-normal drop-shadow-lg [text-shadow:_0_1px_8px_rgb(0_0_0_/_50%)]">
             Own a fully managed apartment in a Luxury Residence in Bali
             <br className="hidden sm:block"/> 
             with stunning rice field views and tropical lifestyle access.
           </h2>
           
           {/* Delivery date */}
-          <p className="font-open text-lg md:text-xl font-semibold mb-10 md:mb-14 text-white/90 drop-shadow-md">
+          <p className="font-open text-lg md:text-xl font-semibold mb-10 md:mb-14 text-white drop-shadow-lg [text-shadow:_0_1px_8px_rgb(0_0_0_/_50%)]">
             Delivery Q1 2026
           </p>
           
           <div className="flex flex-col items-center">
-            {/* Updated CTA button with improved mobile styling */}
+            {/* Enhanced CTA button with better visibility against new background */}
             <a 
               href="#" 
               onClick={scrollToForm}
-              className="inline-block bg-transparent hover:bg-white/10 text-white font-bold py-4 sm:py-5 px-8 sm:px-16 rounded-full transition-all duration-300 text-base sm:text-lg mb-12 sm:mb-16 border-2 border-white hover:border-kaya-beige transform hover:-translate-y-1 tracking-wide shadow-lg"
+              className="inline-block bg-white/10 hover:bg-white/20 text-white font-bold py-4 sm:py-5 px-8 sm:px-16 rounded-full transition-all duration-300 text-base sm:text-lg mb-12 sm:mb-16 border-2 border-kaya-beige hover:border-white transform hover:-translate-y-1 tracking-wide shadow-xl backdrop-blur-sm"
             >
               Request Project Presentation
             </a>
